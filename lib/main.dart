@@ -1,6 +1,7 @@
+import 'package:material_ui/material_ui.dart';
 
-import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
+import 'screens/login/login_screen.dart';
 
 void main() {
   runApp(const VeteApp());
@@ -15,11 +16,7 @@ class VeteApp extends StatelessWidget {
       title: 'VeteApp',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Bienvenido a VeteApp'),
-        ),
-      ),
+      home: const LoginScreen(),
     );
   }
 }
